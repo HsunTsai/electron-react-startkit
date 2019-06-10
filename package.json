@@ -1,0 +1,40 @@
+{
+  "name": "electron-react-startkit",
+  "version": "1.0.0",
+  "description": "Electron React StartKit",
+  "main": "main.js",
+  "homepage": ".",
+  "dependencies": {
+    "is-online": "^8.2.0",
+    "electron": "^4.1.4",
+    "electron-builder": "^20.40.2",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-packager": "^13.1.1",
+    "electron-winstaller": "^3.0.4"
+  },
+  "scripts": {
+    "inst": "npm i && npm i --only=dev",
+    "start": "electron .",
+    "copy_package_main": "copy package.json .\\reactWeb\\dist && copy main.js .\\reactWeb\\dist",
+    "copy_main_js": "echo D | xcopy /e /y .\\main .\\reactWeb\\dist\\main",
+    "package_electron_app": "electron-packager ./reactWeb/dist ReleaseApp --platform=win32 --icon=icons/favicon.ico --out release/ --ignore=node_modules/electron-* --overwrite",
+    "download_electron_nodemodules": "mkdir package_modules && npm i --prefix ./package_modules is-online",
+    "copy_nodemodules": "robocopy .\\package_modules\\node_modules\\is-online .\\release\\ReleaseApp-win32-x64\\resources\\app\\node_modules\\is-online /e /move & exit 0",
+    "remove_nodemodules": "rmdir /s /q .\\package_modules",
+    "package_exe": "cd release && C:\\Users\\Hsun\\AppData\\Roaming\\npm\\grunt",
+    "deploy": "npm run copy_package_main && npm run copy_main_js && npm run package_electron_app && npm run download_electron_nodemodules && npm run copy_nodemodules && npm run remove_nodemodules && npm run package_exe",
+    "package_backup": "electron-packager ./reactWeb/build ReleaseApp --all --out output/",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -w"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0"
+}

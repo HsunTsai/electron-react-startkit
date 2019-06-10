@@ -1,0 +1,4 @@
+node_modules/
+reactWeb/dist/
+release/ReleaseApp-win32-x64/
+release/installer/
