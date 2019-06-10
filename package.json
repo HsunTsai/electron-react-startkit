@@ -27,14 +27,13 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder -w"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/HsunTsai/electron-react-startkit",
   "keywords": [
     "Electron",
-    "quick",
+    "React",
     "start",
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0"
+  "author": "Hsun"
 }
