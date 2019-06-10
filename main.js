@@ -80,7 +80,7 @@ function createWindow() {
 					break;
 				//檢查更新
 				case 'checkUpdate':
-					checkUpdate('http://...', mainWindow);
+					checkUpdate('http://www.hsunserver.ga/download/update.json', mainWindow);
 					break;
 				//測試通知BOX
 				case 'showNotificationBox':
