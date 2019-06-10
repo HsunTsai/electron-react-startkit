@@ -23,10 +23,10 @@ Electron(4.1.4) Start Kit with React(16.8.6) Web
 2.Command line(/release) => npm i
 3.Go to reactWeb folder
 4.Command line(/reactWeb) => npm run deploy
-5.Open release/Gruntfile.js to set your App Name & version
+5.Open release/Gruntfile.js to set your App Name ＆ version
 6.Go to Electron folder
 7.Command line(/) => npm install -g grunt-cli
 8.Open package.json to modify script(package_exe) your real Grunt folder
-8.Command line(/) => npm run deploy
+9.Command line(/) => npm run deploy
 ```
 
