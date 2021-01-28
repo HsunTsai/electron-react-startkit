@@ -6,7 +6,7 @@
   "homepage": ".",
   "dependencies": {
     "is-online": "^8.2.0",
-    "electron": "^4.1.4",
+    "electron": "^9.4.0",
     "electron-builder": "^20.40.2",
     "electron-devtools-installer": "^2.2.4",
     "electron-packager": "^13.1.1",
