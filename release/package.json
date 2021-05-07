@@ -2,7 +2,7 @@
     "name": "electron-release",
     "version": "1.0.0",
     "devDependencies": {
-        "grunt": "^1.0.1",
+        "grunt": "^1.3.0",
         "grunt-electron-installer": "^2.1.0"
     }
 }
